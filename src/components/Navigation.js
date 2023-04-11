@@ -2,15 +2,22 @@ import { Navbar, Nav, Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
 export const Navigation = () => {
   return (
-    <Navbar bg="light" expand="lg">
-      <Container>
-        <Navbar.Brand href="#home">Sajid Arshad</Navbar.Brand>
+    <Navbar bg="primary" collapseOnSelect expand="sm">
+      <Container className="text-secondary">
+        <Navbar.Brand
+          href="#home"
+          style={{ fontSize: "36px", fontFamily: "Helvetica" }}
+        >
+          Sajid Arshad
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
+          <Nav className="me-auto"></Nav>
+          <Nav style={{ fontSize: "20px" }}>
             <Nav.Link as={Link} to="/">
               Home
             </Nav.Link>
+
             <Nav.Link as={Link} to="/About">
               About Me
             </Nav.Link>

@@ -1,4 +1,4 @@
-import "./App.css";
+import "./App.scss";
 import Home from "./components/Home";
 import About from "./components/About";
 import FAQ from "./components/FAQ";
