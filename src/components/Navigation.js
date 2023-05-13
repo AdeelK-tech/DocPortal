@@ -2,13 +2,17 @@ import { Navbar, Nav, Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
 export const Navigation = () => {
   return (
-    <Navbar bg="primary" collapseOnSelect expand="sm">
+    <Navbar bg="secondary" collapseOnSelect expand="sm">
       <Container className="text-secondary">
         <Navbar.Brand
           href="#home"
-          style={{ fontSize: "36px", fontFamily: "Helvetica" }}
+          style={{
+            fontSize: "36px",
+            fontFamily: "Segoe Print",
+            color: "white",
+          }}
         >
-          Sajid Arshad
+          SAJID ARSHAD
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">

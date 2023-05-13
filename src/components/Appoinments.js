@@ -6,6 +6,7 @@ import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import { Layout } from "./Layout";
 import { useState } from "react";
+import emailjs from "@emailjs/browser";
 export default function Appointments() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -27,7 +28,7 @@ export default function Appointments() {
   const msgChangeHandler = (e) => {
     setMsg(e.target.value);
   };
-  const OnApptFormSubmit = (e) => {
+  const OnApptFormSubmit = async (e) => {
     e.preventDefault();
     const response = {
       name,
@@ -37,6 +38,18 @@ export default function Appointments() {
       msg,
     };
     console.log(response);
+    console.log(emailjs);
+    try {
+      const mail = await emailjs.sendForm(
+        "service_fktzb2h",
+        "template_w296odv",
+        e.target,
+        "L5avQa9fNWvQQFcmV"
+      );
+      console.log(mail);
+    } catch (e) {
+      console.log(e);
+    }
   };
   return (
     <Layout>
@@ -48,6 +61,7 @@ export default function Appointments() {
                 <Form.Group as={Col} controlId="formGridName" sm={12}>
                   <Form.Label>Name</Form.Label>
                   <Form.Control
+                    name="from_name"
                     type="text"
                     placeholder="Enter name"
                     value={name}
@@ -58,6 +72,8 @@ export default function Appointments() {
                 <Form.Group as={Col} controlId="formGridEmail" sm={12}>
                   <Form.Label>Email</Form.Label>
                   <Form.Control
+                    htmlFor="email_from"
+                    name="email_from"
                     type="email"
                     placeholder="Enter Email"
                     required
@@ -94,6 +110,7 @@ export default function Appointments() {
                 <Form.Label>Type your msg here:</Form.Label>
                 <Form.Control
                   as="textarea"
+                  name="message"
                   rows={3}
                   value={msg}
                   onChange={msgChangeHandler}
