@@ -1,0 +1,73 @@
+/* .ImageDiv{
+    margin-top: 25px;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+} */
+.HomeImages{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    max-width:420px ;
+    width: 100%;
+    height:auto
+}
+.ImageText{
+text-align: center;
+margin-top: 20px;
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+.text{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.Intro{
+    margin-top:24px;
+    width:100%;
+    text-align:center
+}
+.service{
+    margin-top: 25px;
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 24px;
+    background-color: #e3f4f4;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+.line-break {
+    height: 2px;
+    width: 100%;
+    margin-top: 20px;
+    background-color: #000;
+  }
+  .google-map {
+    margin-top: 30px;
+    padding-bottom: 50%;
+    position: relative;
+}
+.map{
+    height: 100%;
+     width: 100%;
+     left: 0;
+     top: 0;
+     position: absolute;
+}
+.Contact{
+    margin-top: 20px;
+    justify-content: space-evenly;
+}
+.info{
+  display: inline-block;
+  padding: 5px;
+  border-radius: 50%;    
+}
+.contact-number {
+    margin-left: 10px;
+  }

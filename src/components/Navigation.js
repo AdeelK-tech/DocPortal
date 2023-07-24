@@ -4,16 +4,10 @@ export const Navigation = () => {
   return (
     <Navbar bg="secondary" collapseOnSelect expand="sm">
       <Container className="text-secondary">
-        <Navbar.Brand
-          href="#home"
-          style={{
-            fontSize: "36px",
-            fontFamily: "Segoe Print",
-            color: "white",
-          }}
-        >
-          SAJID ARSHAD
+        <Navbar.Brand>
         </Navbar.Brand>
+      
+        
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto"></Nav>

@@ -1,128 +1,69 @@
 import React from "react";
+import Transitions from "./Transitions";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import Form from "react-bootstrap/Form";
-import Button from "react-bootstrap/Button";
 import { Layout } from "./Layout";
-import { useState } from "react";
-import emailjs from "@emailjs/browser";
+import AppointmentForm from "./AppointmentForm";
+import "./Appointment.css";
+import { FaEnvelope, FaPhoneAlt } from "react-icons/fa";
+
 export default function Appointments() {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [phone, setPhone] = useState("");
-  const [Address, setAddress] = useState("");
-  const [msg, setMsg] = useState("");
-  const nameChangeHandler = (e) => {
-    setName(e.target.value);
-  };
-  const emailChangeHandler = (e) => {
-    setEmail(e.target.value);
-  };
-  const phoneChangeHandler = (e) => {
-    setPhone(e.target.value);
-  };
-  const addressChangeHandler = (e) => {
-    setAddress(e.target.value);
-  };
-  const msgChangeHandler = (e) => {
-    setMsg(e.target.value);
-  };
-  const OnApptFormSubmit = async (e) => {
-    e.preventDefault();
-    const response = {
-      name,
-      email,
-      phone,
-      Address,
-      msg,
-    };
-    console.log(response);
-    console.log(emailjs);
-    try {
-      const mail = await emailjs.sendForm(
-        "service_fktzb2h",
-        "template_w296odv",
-        e.target,
-        "L5avQa9fNWvQQFcmV"
-      );
-      console.log(mail);
-    } catch (e) {
-      console.log(e);
-    }
-  };
   return (
     <Layout>
-      <Container>
-        <Row>
-          <Col>
-            <Form onSubmit={OnApptFormSubmit}>
-              <Row className="mb-3">
-                <Form.Group as={Col} controlId="formGridName" sm={12}>
-                  <Form.Label>Name</Form.Label>
-                  <Form.Control
-                    name="from_name"
-                    type="text"
-                    placeholder="Enter name"
-                    value={name}
-                    onChange={nameChangeHandler}
-                  />
-                </Form.Group>
+      <Transitions>
+        <Container>
+          <div className="appoint">
+            <h2>Make an Appointment</h2>
+          </div>
+          <div className="line-break"></div>
+          <div style={{ marginTop: "25px" }}>
+            <Row>
+              <h5>
+                Please call the office at 267-573-0575 to book your first
+                appointment. You may also use the contact section for any
+                questions or to request a call back.
+              </h5>
+            </Row>
+          </div>
 
-                <Form.Group as={Col} controlId="formGridEmail" sm={12}>
-                  <Form.Label>Email</Form.Label>
-                  <Form.Control
-                    htmlFor="email_from"
-                    name="email_from"
-                    type="email"
-                    placeholder="Enter Email"
-                    required
-                    value={email}
-                    onChange={emailChangeHandler}
-                  />
-                </Form.Group>
-              </Row>
-              <Row className="mb-3">
-                <Form.Group as={Col} controlId="formGridPhone" sm={12}>
-                  <Form.Label>Phone</Form.Label>
-                  <Form.Control
-                    type="tel"
-                    placeholder="+92 03310102020"
-                    required
-                    value={phone}
-                    onChange={phoneChangeHandler}
-                  />
-                </Form.Group>
-
-                <Form.Group as={Col} controlId="formGridAddress" sm={12}>
-                  <Form.Label>Address</Form.Label>
-                  <Form.Control
-                    placeholder="Apartment, studio, or floor"
-                    value={Address}
-                    onChange={addressChangeHandler}
-                  />
-                </Form.Group>
-              </Row>
-              <Form.Group
-                className="mb-3"
-                controlId="exampleForm.ControlTextarea1"
-              >
-                <Form.Label>Type your msg here:</Form.Label>
-                <Form.Control
-                  as="textarea"
-                  name="message"
-                  rows={3}
-                  value={msg}
-                  onChange={msgChangeHandler}
-                />
-              </Form.Group>
-              <Button variant="secondary" type="submit">
-                Submit
-              </Button>
-            </Form>
-          </Col>
-        </Row>
-      </Container>
+          <div className="mainDiv">
+            <Row>
+              <Col>
+                <AppointmentForm></AppointmentForm>
+              </Col>
+              <Col lg={6}>
+                <div className="Para">
+                  <h2>Contact Me With Any Questions:</h2>
+                  <p className="paragraph">
+                    Please use the adjacent form to contact me directly regardin
+                    questions, policies or appointments and I will contact you
+                    as soon as possible. Do not use this form for urgent matters
+                    or emergencies.
+                  </p>
+                  <div className="Contact">
+                    <Row>
+                      
+                        <div className="">
+                          <FaEnvelope size={20} />
+                          <span className="contact-number">abc@gamil.com</span>
+                        </div>
+                    
+                        <div className="" style={{marginTop:"20px"}}>
+                          <FaPhoneAlt size={20} />
+                          <span className="contact-number">
+                            +1 (555) 123-4567
+                          </span>
+                        </div>
+                      
+                    </Row>
+                  </div>
+                </div>
+              </Col>
+            </Row>
+          </div>
+        </Container>
+      </Transitions>
     </Layout>
   );
 }

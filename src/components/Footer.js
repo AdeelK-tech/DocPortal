@@ -1,13 +1,18 @@
 import React from "react";
-import { Container } from "react-bootstrap";
+import "./Footer.css"
+import Transition from "./Transitions";
 export default function Footer() {
   return (
-    <div className="bg-secondary mt-auto">
-      <Container className="p-3">
-        <p className="text-center text-white">
-          Thank you for visiting this website
-        </p>
-      </Container>
+    <footer>
+    <Transition>
+    
+    <div className="container">
+      <div className="footer-content">
+      <p>&copy; 2023 Sajid Arshad. All rights reserved.</p>
     </div>
+  </div>
+    
+    </Transition>
+    </footer>
   );
 }
