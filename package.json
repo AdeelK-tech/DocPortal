@@ -6,7 +6,6 @@
     "@emailjs/browser": "^3.11.0",
     "bootstrap": "^5.2.3",
     "framer-motion": "^4.1.17",
-    "nodemailer": "^6.9.1",
     "react": "^18.0.0",
     "react-bootstrap": "^2.7.2",
     "react-dom": "^18.2.0",
@@ -18,7 +17,7 @@
   },
   "scripts": {
     "start": "react-scripts --openssl-legacy-provider start",
-    "build": "react-scripts build",
+    "build": "react-scripts --openssl-legacy-provider build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
