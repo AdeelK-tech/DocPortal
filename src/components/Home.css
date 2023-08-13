@@ -1,9 +1,3 @@
-/* .ImageDiv{
-    margin-top: 25px;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
-} */
 .HomeImages{
     display: block;
     margin-left: auto;
@@ -19,9 +13,6 @@ margin-top: 20px;
 display: block;
 margin-left: auto;
 margin-right: auto;
-}
-.text{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .Intro{
     margin-top:24px;
@@ -59,15 +50,10 @@ margin-right: auto;
      top: 0;
      position: absolute;
 }
-.Contact{
-    margin-top: 20px;
-    justify-content: space-evenly;
-}
-.info{
-  display: inline-block;
-  padding: 5px;
-  border-radius: 50%;    
-}
-.contact-number {
-    margin-left: 10px;
+  .UnstyledList{
+    list-style-type: none;
+    line-height: normal;
+    display: flex;
+    flex-direction: column;
+    gap: 10px
   }

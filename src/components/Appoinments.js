@@ -35,7 +35,7 @@ export default function Appointments() {
               <Col lg={6}>
                 <div className="Para">
                   <h2>Contact Me With Any Questions:</h2>
-                  <p className="paragraph">
+                  <p>
                     Please use the adjacent form to contact me directly regardin
                     questions, policies or appointments and I will contact you
                     as soon as possible. Do not use this form for urgent matters
@@ -46,13 +46,13 @@ export default function Appointments() {
                       
                         <div className="">
                           <FaEnvelope size={20} />
-                          <span className="contact-number">abc@gamil.com</span>
+                          <span className="contact-number"> : abc@gamil.com</span>
                         </div>
                     
                         <div className="" style={{marginTop:"20px"}}>
                           <FaPhoneAlt size={20} />
                           <span className="contact-number">
-                            +1 (555) 123-4567
+                             : +1 (555) 123-4567
                           </span>
                         </div>
                       

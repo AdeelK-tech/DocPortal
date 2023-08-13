@@ -1,0 +1,5 @@
+@font-face {
+    font-family: 'myFont1';
+    src: local('AGaramondPro-Regular'),
+         url('./fonts/AGaramondPro-Regular.otf') format('opentype')
+}

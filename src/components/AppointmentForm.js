@@ -35,8 +35,6 @@ export default function AppointmentForm(){
       Address,
       msg,
     };
-    console.log(response);
-    console.log(emailjs);
     try {
       const mail = await emailjs.sendForm(
         "service_du0q9xp",
@@ -44,9 +42,15 @@ export default function AppointmentForm(){
         e.target,
         "IZyzNf_18igg9T5Tf"
       );
-      console.log(mail);
+      
     } catch (e) {
       console.log(e);
+    }
+    finally{
+      setName("")
+      setAddress("")
+      setEmail("")
+      setPhone("")
     }
   };
     return(
