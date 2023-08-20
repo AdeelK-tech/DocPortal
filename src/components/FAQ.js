@@ -28,7 +28,7 @@ export default function FAQ() {
             </p>
           </div>
         </div>
-        <div style={{marginTop:"100px"}}>
+        <div style={{marginTop:"130px"}}>
 
         </div>
       </Container>

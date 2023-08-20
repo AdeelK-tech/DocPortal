@@ -3,3 +3,8 @@
     src: local('AGaramondPro-Regular'),
          url('./fonts/AGaramondPro-Regular.otf') format('opentype')
 }
+@font-face {
+    font-family: 'myFont2';
+    src: local('Haruno-z8P0L'),
+         url('./fonts/Haruno-z8P0L.otf') format('opentype')
+}

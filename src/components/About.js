@@ -47,49 +47,10 @@ export default function About() {
                     journey of life continues till we are alive.
                   </p>
                 </div>
-                <div style={{ marginTop: "5px" }}>
-                  <h5>
-                    <i>Child and Adolescent Treatment that I specialize in:</i>
-                  </h5>
-                  <div>
-                    <ul>
-                      <li>ADHD</li>
-                      <li>Childhood/Adolescent Anxiety</li>
-                      <li>Depression</li>
-                      <li>Behavioral Disturbances such as Aggression, Anger</li>
-                      <li>
-                        Diagnosis and Treatment of eating Disorder ( I am not
-                        specialized in Eating Disorder as eating disorder
-                        specialist )
-                      </li>
-                      <li>
-                        Psychiatric co-morbid condition with intellectual
-                        disabilities and/or Learning disorder
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div style={{ marginTop: "5px" }}>
-                  <h5>
-                    <i>Adult Treatment that I specialize in:</i>
-                  </h5>
-                  <div style={{ fontSize: "16px" }}>
-                    <ul>
-                      <li>
-                        Anxiety with its different types such as Generalized or
-                        specific Anxiety.
-                      </li>
-                      <li>Major Depression</li>
-                      <li>Panic Disorder</li>
-                      <li>Psychosis</li>
-                      <li>OCD</li>
-                      <li>Limited Treatment of Substance use disorder</li>
-                    </ul>
-                  </div>
-                </div>
+               
               </Col>
             </Row>
-            <div style={{ marginTop: "5px" }}>
+            <div style={{ marginTop: "30px" }}>
               <p
                 style={{
                   fontWeight: "400",

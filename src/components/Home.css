@@ -1,3 +1,4 @@
+@import "../fonts.css";
 .HomeImages{
     display: block;
     margin-left: auto;
@@ -57,3 +58,9 @@ margin-right: auto;
     flex-direction: column;
     gap: 10px
   }
+  .constantMargin{
+    margin-top: 10px;
+  }
+ .company{
+  font-family: myFont2;
+ }

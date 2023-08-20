@@ -29,7 +29,7 @@ function App() {
   }
   useEffect(() => {
     someRequest().then(() => {
-      const loaderElement = document.querySelector(".loader-container");
+      const loaderElement = document.querySelector(".divLoader");
       if (loaderElement) {
         loaderElement.remove();
         setLoading(!isLoading);
