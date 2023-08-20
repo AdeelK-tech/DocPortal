@@ -23,22 +23,22 @@ const Animated = () => {
 }
  
 function App() {
-  const [isLoading, setLoading] = useState(true);
-  function someRequest() { //Simulates a request; makes a "promise" that'll run for 2.5 seconds
-    return new Promise(resolve => setTimeout(() => resolve(), 4500));
-  }
-  useEffect(() => {
-    someRequest().then(() => {
-      const loaderElement = document.querySelector(".divLoader");
-      if (loaderElement) {
-        loaderElement.remove();
-        setLoading(!isLoading);
-      }
-    });
-  });
-  if (isLoading) { //
-    return null;
-  }
+  // const [isLoading, setLoading] = useState(true);
+  // function someRequest() { //Simulates a request; makes a "promise" that'll run for 2.5 seconds
+  //   return new Promise(resolve => setTimeout(() => resolve(), 4500));
+  // }
+  // useEffect(() => {
+  //   someRequest().then(() => {
+  //     const loaderElement = document.querySelector(".divLoader");
+  //     if (loaderElement) {
+  //       loaderElement.remove();
+  //       setLoading(!isLoading);
+  //     }
+  //   });
+  // });
+  // if (isLoading) { 
+  //   return null;
+  // }
   return (
     <BrowserRouter>
     <Animated></Animated>
