@@ -46,13 +46,13 @@ export default function Appointments() {
                       
                         <div className="">
                           <FaEnvelope size={20} />
-                          <span className="contact-number"> : abc@gamil.com</span>
+                          <span className="contact-number"><a href = "mailto: care@brightfuturepsychiatry.net">care@brightfuturepsychiatry.net</a></span>
                         </div>
                     
                         <div className="" style={{marginTop:"20px"}}>
                           <FaPhoneAlt size={20} />
                           <span className="contact-number">
-                             : +1 (555) 123-4567
+                             : +1 (732) 314-1820
                           </span>
                         </div>
                       

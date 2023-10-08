@@ -5,11 +5,12 @@ import { Container } from "react-bootstrap";
 import Transitions from "./Transitions";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import img1 from "../images/about.jpg";
+import img1 from "../images/about.webp";
 export default function About() {
   return (
     <Layout>
       <Transitions>
+        <link rel="preload" as="image" href="../src/images/about.webp" />
         <Container>
           <div className="about">
             <h2>About me</h2>
@@ -21,8 +22,7 @@ export default function About() {
                 <img src={img1} alt="doc"></img>
               </Col>
               <Col lg={8}>
-                <div style={{marginTop:"10px"
-                }}>
+                <div style={{ marginTop: "10px" }}>
                   <h2>Sajid Arshad, M.D.</h2>
                   <p
                     style={{
@@ -47,7 +47,6 @@ export default function About() {
                     journey of life continues till we are alive.
                   </p>
                 </div>
-               
               </Col>
             </Row>
             <div style={{ marginTop: "30px" }}>

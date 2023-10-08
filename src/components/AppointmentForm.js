@@ -28,13 +28,6 @@ export default function AppointmentForm(){
   };
   const OnApptFormSubmit = async (e) => {
     e.preventDefault();
-    const response = {
-      name,
-      email,
-      phone,
-      Address,
-      msg,
-    };
     try {
       const mail = await emailjs.sendForm(
         "service_du0q9xp",
@@ -87,7 +80,7 @@ export default function AppointmentForm(){
                         <Form.Label>Phone</Form.Label>
                         <Form.Control
                           type="tel"
-                          placeholder="+92 03310102020"
+                          placeholder="+1 (123) 456-7891"
                           required
                           value={phone}
                           onChange={phoneChangeHandler}

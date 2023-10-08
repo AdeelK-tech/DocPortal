@@ -8,29 +8,44 @@ export default function FAQ() {
     <Layout>
       <Transitions>
       <Container>
+        <div>
         <div className="Faq">
           <h2>FAQS</h2>
         </div>
         <div className="line-break"></div>
-        <div style={{marginTop:"25px"}}>
-          <h3>Will my insurance cover my visit?</h3>
-          <div style={{marginTop:"25px"}} className="Para">
-            <p className="paragraph">
-            In order to ensure enhanced care and availability to each patient that I treat, I must limit the number of patients with whom I work.  I offer  flexible and prompt scheduling for comprehensive evaluations and follow-up appointments and am available between visits via phone. In order to provide the highest level of personalized treatment, I am not able to accept insurance.  However, after our session, I can provide you with a medical receipt that you may submit to your insurance for out-of-network reimbursement.
-            </p>
-          </div>
+        <div style={{marginTop:"20px"}}>
+          <ul>
+            <li>
+              <h4>Do you accept insurance ?</h4>
+              <p>Yes . We accept optum ( and it’s covered insurances) and Aetna</p>
+            </li>
+            <li>
+              <h4>Do you see patients via telemedicine ?</h4>
+              <p>Yes, we have both telemedicine and in person visits.</p>
+            </li>
+            <li>
+              <h4>Do you see cash payments ?</h4>
+              <p>Yes, we accept cash payments.</p>
+            </li>
+            <li>
+              <h4>Do you treat children ?</h4>
+              <p>Yes, we accept children more than 5 years of age</p>
+            </li>
+            <li>
+              <h4>Is my information safe ?</h4>
+              <p>We never share your information with anyone. It is confidential. We follow all state regulations</p>
+            </li>
+            <li>
+              <h4>Do you prescribe controlled substances ?</h4>
+              <p>Yes. However it depends on case to case basis and we strictly follow state and federal regulations</p>
+            </li>
+          </ul>
         </div>
-        <div style={{marginTop:"25px"}}>
-          <h3>Do you practice telepsychiatry?</h3>
-          <div style={{marginTop:"25px"}} className="Para">
-            <p className="paragraph">
-            Yes, at this time all sessions must occur though my secure telemedicine portal at Doxy.me
-            </p>
-          </div>
-        </div>
-        <div style={{marginTop:"130px"}}>
+        <div style={{marginTop:"50px"}}>
 
         </div>
+        </div>
+        
       </Container>
       </Transitions>
     </Layout>

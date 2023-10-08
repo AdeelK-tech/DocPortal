@@ -11,7 +11,7 @@ const Transitions = ({ children }) => {
 			initial="initial"
 			animate="animate"
 			exit="exit"
-			transition={{ duration: 2.25 }}
+			transition={{ duration: 1.50 }}
 		>
 			{children}
 		</motion.div>
